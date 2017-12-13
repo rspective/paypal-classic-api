@@ -26,6 +26,8 @@ class PayPal
       response = {}
 
       extractValue = (key, value) ->
+        if key == 'TRANSACTIONID'
+          return value
         if not isNaN(value)
           value = parseFloat(value)
         if key == 'TIMESTAMP' or /.+DATE$/.test key

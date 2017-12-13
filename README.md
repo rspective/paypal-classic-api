@@ -1,4 +1,6 @@
 
+### This is a fork without parsing of TRANSACTIONID bug
+
 ### PayPal Classic API bindings for Node.js
 
 This is a wrapper for PayPal "Classic" NVP API: https://developer.paypal.com/docs/classic/
