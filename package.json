@@ -1,6 +1,6 @@
 {
     "name": "paypal-classic-api-2",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Paypal Classic API bindings",
     "repository": {
         "type": "git",
