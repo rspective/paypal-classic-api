@@ -1,7 +1,7 @@
 
 ### This is a fork without parsing of TRANSACTIONID bug
 This bug was registered in original repository -> https://github.com/A2K/paypal-classic-api/issues/1 and it is related to parsing of argument (TRANSACTIONID) as float in following lines:
-```javascript
+```coffee
 if not isNaN(value)
 value = parseFloat(value)
 ```
