@@ -1,5 +1,11 @@
 
 ### This is a fork without parsing of TRANSACTIONID bug
+This bug was registered in original repository -> https://github.com/A2K/paypal-classic-api/issues/1 and it is related to parsing of argument (TRANSACTIONID) as float in following lines:
+```javascript
+if not isNaN(value)
+value = parseFloat(value)
+```
+In case of TRANSACTIONID like 94E73621017932142 isNan results in false and parseFloat in NaN.
 
 ### PayPal Classic API bindings for Node.js
 
@@ -7,7 +13,7 @@ This is a wrapper for PayPal "Classic" NVP API: https://developer.paypal.com/doc
 
 ### Installation
 ```
-npm install paypal-classic-api --save
+npm install paypal-classic-api-2 --save
 ```
 ### Usage
 **class PayPal(options)**
@@ -22,7 +28,7 @@ Methods names and arguments information can be found at https://developer.paypal
 
 ### Example
 ```javascript
-PayPal = require('paypal-classic-api');
+PayPal = require('paypal-classic-api-2');
 
 var credentials = { username: 'tok261_biz_api.abc.com',
                     password: '1244612379',
